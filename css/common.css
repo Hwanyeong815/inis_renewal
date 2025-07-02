@@ -1,0 +1,391 @@
+.inner {
+    /* background: grey; */
+    width: 1300px;
+    margin: auto;
+}
+
+#header {
+    z-index: 100;
+    width: 100%;
+    transition: 0.4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#header:hover {
+    background-color: rgba(45, 45, 45, 0.2);
+}
+
+#header .inner {
+    height: 80px;
+}
+
+#header .headBody {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .headBody h1 {
+    margin-left: 10px;
+    width: 150px;
+    height: 50px;
+    background-image: url(../images/logo_nhis_w.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+#header .headBody .util {
+    display: flex;
+    justify-content: center;
+}
+#header .headBody .util li {
+    color: white;
+    margin-right: 30px;
+}
+#header .headBody .util li i {
+    margin-right: 10px;
+}
+#header .headGnb {
+    background: #fff;
+    opacity: 0;
+    transition: 0.2s;
+}
+#header:hover .headGnb {
+    opacity: 1;
+}
+#header .headGnb .gnb {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+#header .headGnb .gnb {
+    visibility: visible;
+    opacity: 1;
+}
+
+#header .headGnb .gnb .menuTitle {
+    margin: auto;
+    height: 60px;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+#header .headGnb .gnb .menuTitle a {
+    color: #555;
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    position: relative;
+    height: 50%;
+}
+#header .headGnb .gnb .menuTitle a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+
+    transition: 0.3s;
+}
+#header .headGnb .gnb .menuTitle a:hover::after {
+    background-color: #1d1d1d;
+}
+
+#header .headGnb .gnb .menuWrap {
+    display: none;
+
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+#header .headGnb .gnb .menuWrap.on {
+    background-color: #fff;
+    display: flex;
+}
+
+#header .headGnb .gnb .menuWrap h3 {
+    font-size: 20px;
+    display: block;
+}
+#header .headGnb .gnb .menuWrap .mainMenu {
+    /* display: none; */
+    display: flex;
+    justify-content: space-between;
+}
+#header .headGnb .gnb .menuWrap.on .mainMenu {
+}
+
+#header .headGnb .gnb .menuWrap .mainMenu > ul > li > a {
+    display: block;
+    width: 250px;
+    height: 100%;
+    background-color: rgb(236, 236, 236);
+    transition: background-color 0.3s ease;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: 500;
+    text-indent: 20px;
+    color: inherit;
+    text-decoration: none;
+}
+
+#header .headGnb .gnb .menuWrap .mainMenu > ul > li > a:hover {
+    background-color: #fff;
+}
+
+#header .headGnb .gnb .menuWrap .subMenuWrap {
+}
+
+#header .headGnb .gnb .menuWrap .subMenuWrap > ul {
+    display: none;
+
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    /* padding: 20px 0; */
+    margin: 20px;
+    min-width: 300px;
+    max-height: 500px;
+    /* margin-top: 20px; */
+    position: relative;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+
+#header .headGnb .gnb .menuWrap .subMenuWrap > ul.on {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.menu-height .subMenuWrap > ul.on {
+    max-height: 180px !important;
+}
+#header .headGnb .gnb .menuWrap .subMenuWrap > ul h3 {
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#header .headGnb .gnb .menuWrap .subMenuWrap > ul h3 a {
+    /* width: 1000px; */
+
+    position: relative;
+}
+
+#header .headGnb .gnb .menuWrap .subMenuWrap > ul h3 a::after {
+    content: '>';
+    margin-left: 10px;
+    position: absolute;
+    right: -50%;
+}
+
+#header .headGnb .gnb .menuWrap .subMenuWrap > ul > li {
+    margin-top: 30px;
+    margin-right: 10px;
+    font-weight: 400;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 280px;
+    padding-bottom: 10px;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    opacity: 0.2;
+    display: none;
+    transition: 0.4s;
+}
+
+/* header */
+
+#footer {
+    margin-top: 150px;
+    padding: 10px;
+    background-color: rgba(240, 240, 240, 1);
+    position: relative;
+}
+#footer .inner {
+}
+#footer .inner .cont {
+    position: relative;
+}
+#footer .inner .cont1 {
+    border-bottom: 1px solid#D8D8D8;
+    padding-bottom: 40px;
+}
+
+#footer h1 {
+    width: 150px;
+    height: 50px;
+    background-image: url(../images/logo_nhis.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-bottom: 30px;
+}
+
+#footer .cont0 {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+#footer .cont0 .family-site {
+    position: absolute;
+    bottom: 12px;
+    display: flex;
+}
+#footer .cont0 .family-site p {
+    width: 210px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    display: block;
+    color: #1d1d1d;
+    font-size: 17px;
+    font-weight: 400;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer .cont0 .family-site p:last-child {
+    border-left: none;
+}
+
+#footer .text-wrap p {
+    font-size: 17px;
+    font-weight: 400;
+}
+#footer .text-wrap span {
+    font-weight: 700;
+}
+#footer .heading-wrap {
+    width: 260px;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+#footer .heading-wrap .qr-box {
+}
+#footer .heading-wrap .qr-box p {
+    color: #1d1d1d;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#footer .heading-wrap .qr-box .img-wrap {
+    width: 82px;
+    height: 82px;
+    padding: 9px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background: #fff;
+    display: flex;
+}
+#footer .heading-wrap .qr-box .img-wrap img {
+    width: 64px;
+    justify-content: center;
+    align-items: center;
+}
+#footer .heading-wrap .heading-txt {
+    margin-top: 20px;
+}
+#footer .heading-wrap .heading-txt p {
+    color: #1d1d1d;
+    font-size: 17px;
+    font-weight: 700;
+}
+#footer .heading-wrap .heading-icons {
+    display: flex;
+    gap: 10px;
+}
+#footer .heading-wrap .heading-icons .btn {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #e4e4e4;
+    overflow: hidden;
+    position: relative;
+}
+#footer .heading-wrap .heading-icons .btn img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+}
+#footer .links-wrap {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#footer .links-wrap > li {
+}
+#footer .links-wrap > li > .text {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+#footer .links-wrap > li > .text p {
+    color: #1d1d1d;
+    font-size: 17px;
+    font-weight: 400;
+}
+#footer .links-wrap > li > .text p span {
+}
+#footer .links-wrap > li > p {
+    color: #555;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#footer .links-wrap > li:last-child {
+    display: flex;
+    gap: 10px;
+}
+#footer .links-wrap > li:last-child img {
+    width: 60px;
+}
+
+#footer .info-bar {
+    display: flex;
+    gap: 8px;
+    background-color: #000;
+    border-radius: 6px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+#footer .info-bar h2 img {
+    width: 72px;
+}
+#footer .info-bar p {
+    color: #fff;
+}
