@@ -295,7 +295,6 @@ input[type='checkbox']:checked::after {
 .list-wrap-all .list-box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 50px;
 }
 .list-wrap-all .list-box li {
@@ -314,16 +313,24 @@ input[type='checkbox']:checked::after {
 .list-wrap-all .list-box li:nth-child(-n + 3) {
     margin-top: 30px;
 }
-
 .list-wrap-all .list-box li .em-wrap {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    gap: 10px;
 }
-.list-wrap-all .list-box li .em-wrap em {
+.list-wrap-all .list-box li em {
     border-radius: 10px;
     border: 1px solid var(--color-grey-43, #6d6d6d);
-    padding: 10px 20px;
-    margin-right: 10px;
+    padding: 5px 10px;
+    /* margin-right: 5px; */
     font-size: 18px;
     font-weight: 500;
+    /* width: 50px; */
+}
+.list-wrap-all .list-box li strong {
+    font-size: 20px;
+    font-weight: 600;
 }
 .list-wrap-all .list-box li p {
     word-break: keep-all;
@@ -331,7 +338,7 @@ input[type='checkbox']:checked::after {
 .list-wrap-all .list-box li button {
     width: 150px;
     border-radius: 10px;
-    border: none;
+    border: 1px solid #fff;
     background: var(--color-red-44, #e00e00);
     color: #fff;
     text-align: center;
@@ -340,6 +347,12 @@ input[type='checkbox']:checked::after {
     line-height: normal;
     letter-spacing: -0.54px;
     padding: 10px 20px;
+    cursor: pointer;
+}
+.list-wrap-all .list-box li button:hover {
+    background: #fff;
+    color: var(--color-red-44, #e00e00);
+    border: 1px solid var(--color-red-44, #e00e00);
 }
 
 /* .list-wrap-all */

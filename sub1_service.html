@@ -15,7 +15,7 @@
         <title>서비스 찾기</title>
     </head>
     <body>
-        <main id="main" class="container">
+        <main id="main" class="service">
             <div class="inner">
                 <article class="sub-page-head">
                     <ul class="sub-page-menu">
@@ -34,41 +34,99 @@
                         <form name="category-chks" class="category-wrap" method="category-chks">
                             <h4>지역가입자 유형</h4>
                             <div class="chk-box">
-                                <p><input type="checkbox" name="" id="" checked />지역가입자</p>
-                                <p><input type="checkbox" name="" id="" />지역가입자</p>
-                                <p><input type="checkbox" name="" id="" />지역가입자</p>
-                                <p><input type="checkbox" name="" id="" />지역가입자</p>
+                                <p>
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        id=""
+                                        value="지역가입자"
+                                    />지역가입자
+                                </p>
+
+                                <p>
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        id=""
+                                        value="직장가입자"
+                                    />직장가입자
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id="" value="피부양자" />피부양자
+                                </p>
+                                <p><input type="checkbox" name="" id="" value="사업장" />사업장</p>
                             </div>
                         </form>
                         <form name="category-chks" class="category-wrap" method="category-chks">
                             <h4>서비스 유형</h4>
                             <div class="chk-box">
-                                <p><input type="checkbox" name="" id="" checked />지역가입자</p>
-                                <p><input type="checkbox" name="" id="" />지역가입자</p>
-                                <p><input type="checkbox" name="" id="" />지역가입자</p>
-                                <p><input type="checkbox" name="" id="" />지역가입자</p>
+                                <p>
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        id=""
+                                        value="신고/신청"
+                                    />신고/신청
+                                </p>
+                                <p><input type="checkbox" name="" id="" value="발급" />발급</p>
+                                <p><input type="checkbox" name="" id="" value="조회" />조회</p>
+                                <p>
+                                    <input type="checkbox" name="" id="" value="바로가기" />바로가기
+                                </p>
                             </div>
                         </form>
                         <form name="category-chks" class="category-wrap" method="category-chks">
                             <h4>분야</h4>
                             <div class="chk-box">
-                                <p><input type="checkbox" name="" id="" checked />지역가입자</p>
-                                <p><input type="checkbox" name="" id="" />지역가입자</p>
-                                <p><input type="checkbox" name="" id="" />지역가입자</p>
-                                <p><input type="checkbox" name="" id="" />지역가입자</p>
-                                <p><input type="checkbox" name="" id="" />본인부담완화</p>
-                                <p><input type="checkbox" name="" id="" />지역가입자</p>
-                                <p><input type="checkbox" name="" id="" />지역가입자</p>
-                                <p><input type="checkbox" name="" id="" />지역가입자</p>
+                                <p><input type="checkbox" name="" id="" value="자격" />자격</p>
+                                <p><input type="checkbox" name="" id="" value="보험료" />보험료</p>
+                                <p><input type="checkbox" name="" id="" value="납부" />납부</p>
+                                <p><input type="checkbox" name="" id="" value="환급금" />환급금</p>
+                                <p>
+                                    <input type="checkbox" name="" id="" value="현금급여" />현금급여
+                                </p>
+                                <p>
+                                    <input type="checkbox" name="" id="" value="현물급여" />현물급여
+                                </p>
+                                <p>
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        id=""
+                                        value="의료비지원"
+                                    />의료비지원
+                                </p>
+                                <p>
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        id=""
+                                        value="본인부담 완화"
+                                    />본인부담 완화
+                                </p>
                             </div>
                         </form>
                         <form name="category-chks" class="category-wrap" method="category-chks">
                             <h4>대상</h4>
                             <div class="chk-box">
-                                <p><input type="checkbox" name="" id="" checked />지역가입자</p>
-                                <p><input type="checkbox" name="" id="" />지역가입자</p>
-                                <p><input type="checkbox" name="" id="" />지역가입자</p>
-                                <p><input type="checkbox" name="" id="" />지역가입자</p>
+                                <p><input type="checkbox" name="" id="" value="임출산" />임출산</p>
+                                <p><input type="checkbox" name="" id="" value="임출산" />장애인</p>
+                                <p>
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        id=""
+                                        value="아동/청소년"
+                                    />아동/청소년
+                                </p>
+                                <p>
+                                    <input
+                                        type="checkbox"
+                                        name=""
+                                        id=""
+                                        value="만65세 이상"
+                                    />만65세 이상
+                                </p>
                             </div>
                         </form>
                     </section>
@@ -77,9 +135,8 @@
                         <p>
                             <select name="" id="">
                                 <option value="">전체</option>
-                                <option value="">전체</option>
-                                <option value="">전체</option>
-                                <option value="">전체</option>
+                                <option value="">제목</option>
+                                <option value="">내용</option>
                             </select>
                         </p>
                         <p>
@@ -109,138 +166,18 @@
                         </div>
                     </div>
                     <ul class="list-box">
-                        <li>
+                        <!-- <li>
                             <div class="em-wrap">
                                 <em>#발급</em>
                                 <em>#자격</em>
                             </div>
+                            <strong>자격득실확인서</strong>
                             <p>
                                 본인의 득실확인서를 확인할 수 있는 서비스입니다 본인의 득실확인서를
                                 확인할 수 있는 서비스입니다
                             </p>
                             <button>자세히보기</button>
-                        </li>
-                        <li>
-                            <div class="em-wrap">
-                                <em>#발급</em>
-                                <em>#자격</em>
-                            </div>
-                            <p>
-                                본인의 득실확인서를 확인할 수 있는 서비스입니다 본인의 득실확인서를
-                                확인할 수 있는 서비스입니다
-                            </p>
-                            <button>자세히보기</button>
-                        </li>
-                        <li>
-                            <div class="em-wrap">
-                                <em>#발급</em>
-                                <em>#자격</em>
-                            </div>
-                            <p>
-                                본인의 득실확인서를 확인할 수 있는 서비스입니다 본인의 득실확인서를
-                                확인할 수 있는 서비스입니다
-                            </p>
-                            <button>자세히보기</button>
-                        </li>
-                        <li>
-                            <div class="em-wrap">
-                                <em>#발급</em>
-                                <em>#자격</em>
-                            </div>
-                            <p>
-                                본인의 득실확인서를 확인할 수 있는 서비스입니다 본인의 득실확인서를
-                                확인할 수 있는 서비스입니다
-                            </p>
-                            <button>자세히보기</button>
-                        </li>
-                        <li>
-                            <div class="em-wrap">
-                                <em>#발급</em>
-                                <em>#자격</em>
-                            </div>
-                            <p>
-                                본인의 득실확인서를 확인할 수 있는 서비스입니다 본인의 득실확인서를
-                                확인할 수 있는 서비스입니다
-                            </p>
-                            <button>자세히보기</button>
-                        </li>
-                        <li>
-                            <div class="em-wrap">
-                                <em>#발급</em>
-                                <em>#자격</em>
-                            </div>
-                            <p>
-                                본인의 득실확인서를 확인할 수 있는 서비스입니다 본인의 득실확인서를
-                                확인할 수 있는 서비스입니다
-                            </p>
-                            <button>자세히보기</button>
-                        </li>
-                        <li>
-                            <div class="em-wrap">
-                                <em>#발급</em>
-                                <em>#자격</em>
-                            </div>
-                            <p>
-                                본인의 득실확인서를 확인할 수 있는 서비스입니다 본인의 득실확인서를
-                                확인할 수 있는 서비스입니다
-                            </p>
-                            <button>자세히보기</button>
-                        </li>
-                        <li>
-                            <div class="em-wrap">
-                                <em>#발급</em>
-                                <em>#자격</em>
-                            </div>
-                            <p>
-                                본인의 득실확인서를 확인할 수 있는 서비스입니다 본인의 득실확인서를
-                                확인할 수 있는 서비스입니다
-                            </p>
-                            <button>자세히보기</button>
-                        </li>
-                        <li>
-                            <div class="em-wrap">
-                                <em>#발급</em>
-                                <em>#자격</em>
-                            </div>
-                            <p>
-                                본인의 득실확인서를 확인할 수 있는 서비스입니다 본인의 득실확인서를
-                                확인할 수 있는 서비스입니다
-                            </p>
-                            <button>자세히보기</button>
-                        </li>
-                        <li>
-                            <div class="em-wrap">
-                                <em>#발급</em>
-                                <em>#자격</em>
-                            </div>
-                            <p>
-                                본인의 득실확인서를 확인할 수 있는 서비스입니다 본인의 득실확인서를
-                                확인할 수 있는 서비스입니다
-                            </p>
-                            <button>자세히보기</button>
-                        </li>
-                        <li>
-                            <div class="em-wrap">
-                                <em>#발급</em>
-                                <em>#자격</em>
-                            </div>
-                            <p>
-                                본인의 득실확인서를 확인할 수 있는 서비스입니다 본인의 득실확인서를
-                                확인할 수 있는 서비스입니다
-                            </p>
-                            <button>자세히보기</button>
-                        </li>
-                        <li>
-                            <div class="em-wrap">
-                                <em>#발급</em>
-                                <em>#자격</em>
-                            </div>
-                            <p>
-                                본인의 득실확인서를 확인할 수 있는 서비스입니다 본인의 득실확인서를
-                                확인할 수 있는 서비스입니다
-                            </p>
-                            <button>자세히보기</button>
-                        </li>
+                        </li> -->
                     </ul>
                 </article>
                 <ul class="paging">
@@ -254,6 +191,8 @@
                 </ul>
             </div>
         </main>
-        <!-- <script></script> -->
+        <footer id="footer"></footer>
+        <script src="js/common.js"></script>
+        <script type="module" src="../js/sub.js"></script>
     </body>
 </html>
