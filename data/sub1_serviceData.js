@@ -1,4 +1,4 @@
-const sub1 = [
+export const serviceData = [
     {
         id: 1,
         title: '자격득실확인서',
@@ -83,5 +83,3 @@ const sub1 = [
         tags: ['#피부양자', '#자격', '#보험료'],
     },
 ];
-
-export default sub1;

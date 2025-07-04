@@ -1,4 +1,4 @@
-import sub1 from './sub1_data.js';
+import { serviceData } from '../data/data.js';
 
 const sub1_all = () => {
     const $list = get('.service .list-box');
@@ -41,9 +41,9 @@ const sub1_all = () => {
         let filtered;
 
         if (checkedTypes.length === 0) {
-            filtered = sub1;
+            filtered = serviceData;
         } else {
-            filtered = sub1.filter((item) => checkedTypes.includes(item.type));
+            filtered = serviceData.filter((item) => checkedTypes.includes(item.type));
         }
 
         renderList(filtered);
@@ -51,9 +51,9 @@ const sub1_all = () => {
         $total.textContent = filtered.length;
     };
 
-    renderList(sub1);
+    renderList(serviceData);
     $num.textContent = 0;
-    $total.textContent = sub1.length;
+    $total.textContent = serviceData.length;
 
     $checks.forEach((checkbox) => {
         checkbox.addEventListener('change', applyFilter);

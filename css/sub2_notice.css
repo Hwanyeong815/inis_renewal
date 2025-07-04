@@ -198,23 +198,24 @@
 .notice-body .table col {
 }
 .notice-body .table .w1 {
-    width: 50px;
+    width: 70px;
 }
 .notice-body .table .w2 {
     width: 400px;
 }
 .notice-body .table .w3 {
-    width: 120px;
+    width: 80px;
 }
 .notice-body .table .w4 {
-    width: 120px;
+    width: 80px;
+}
+.notice-body .table .w5 {
+    width: 50px;
 }
 .notice-body .table tr {
-    /* border: 1px solid #000; */
 }
 .notice-body .table tr th,
 .notice-body .table tr td {
-    /* border: 1px solid #000; */
     text-align: center;
     padding: 15px;
     font-size: 13px;
@@ -228,7 +229,7 @@
 }
 .notice-body .table tr td {
 }
-.notice-body .table tr td:first-child {
+.notice-body .table tr td img {
 }
 .notice-body .table tr td:nth-child(2) {
     text-align: left;
