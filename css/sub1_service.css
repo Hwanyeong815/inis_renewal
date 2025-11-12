@@ -10,12 +10,14 @@ h4 {
 .inner {
     position: relative;
 }
+
 /* 공통 */
 .sub-page-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    border: 1px solid #000;
 }
 .sub-page-head::after {
     content: '';
@@ -25,7 +27,6 @@ h4 {
     transform: translateX(-50%);
     /* min-width: 1800px; */
     width: calc(100vw - 17px);
-
     border-bottom: 1px solid #e5e5e5;
 }
 .sub-page-menu {
@@ -257,6 +258,7 @@ input[type='checkbox']:checked::after {
 /* .filter  */
 .list-wrap-all {
     margin: 50px 0;
+    background-color: rgba(237, 241, 245, 1);
 }
 .list-wrap-all .list-title {
     padding: 30px 0;
@@ -282,16 +284,16 @@ input[type='checkbox']:checked::after {
 .list-wrap-all .list-title .list-title-wrap strong {
     font-weight: 600;
 }
-.list-wrap-all .list-box::after {
+/* .list-wrap-all .list-box::after {
     content: '';
     width: calc(100vw - 17px);
     height: 100%;
-    background-color: rgba(237, 241, 245, 1);
+   
     z-index: -10;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-}
+} */
 .list-wrap-all .list-box {
     display: flex;
     flex-wrap: wrap;
